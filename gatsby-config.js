@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Prismic Tutorial',
-    description: 'Learn how to integrate Prismic into your Gatsby project.',
+    title: 'Falls Massage',
+    description: "Fergus Falls's Premier Massage Therapy",
   },
   plugins: [
     {
