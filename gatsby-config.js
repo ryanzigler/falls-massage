@@ -18,11 +18,15 @@ module.exports = {
       resolve: 'gatsby-source-prismic',
       options: {
         repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+        accessToken: process.env.PRISMIC_API_TOKEN,
+        releaseID: process.env.PRISMIC_RELEASE_ID,
+        customTypesApiToken: process.env.PRISMIC_CUSTOM_TYPES_API_TOKEN,
         linkResolver: require('./src/LinkResolver').linkResolver,
         schemas: {
           homepage: require('./custom_types/homepage.json'),
           navigation: require('./custom_types/navigation.json'),
           page: require('./custom_types/page.json'),
+          testimonials: {},
         },
       },
     },
